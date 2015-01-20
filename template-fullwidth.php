@@ -18,7 +18,7 @@ Template Name: Fullwidth page
 
 <div class="page-wrap">
 <!-- -------------------------------------------- -->
-<?php include "includes/normal-navigation.php";?>
+<?php include "includes/navigation.php";?>
 <!-- ------------------------------------------ -->
 
 
