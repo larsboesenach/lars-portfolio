@@ -1,0 +1,27 @@
+/**************************************************
+
+	In this file we place all the Variables ;)
+
+**************************************************/
+
+// Fonts
+$font: 'Open Sans', sans-serif;
+//-----------------------------
+
+
+// Colors
+$black: 		#212121;
+//----------------------
+
+
+// Settings
+
+p,h1,h2,h3,h4,h5,h6 {
+	color: black;
+	font-family: $font;
+}
+
+a {
+	font-family: $font;
+}
+
