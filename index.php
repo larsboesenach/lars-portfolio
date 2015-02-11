@@ -2,6 +2,7 @@
 <!-- ---------------------- -->
 <!-- The head closes here on this page -->
 
+<script rel="text/javascript" src="js/custom-js.js"></script>
 
 <!-- ------------------ -->
 </head>
