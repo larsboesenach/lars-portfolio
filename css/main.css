@@ -26,13 +26,18 @@ a {
   font-family: "Oxygen", sans-serif; }
 
 .Nav-wrap {
-  border-bottom: 1px solid #F1F2F2; }
+  border-bottom: 1px solid #F1F2F2;
+  overflow: hidden; }
+  .Nav-wrap a {
+    outline: 0; }
 
 .Logo-wrap {
   padding: 20px 15px 15px;
   display: inline-block; }
   .Logo-wrap:hover {
     cursor: pointer; }
+  .Logo-wrap:focus, .Logo-wrap:active {
+    outline: none; }
   .Logo-wrap .Logo-word {
     position: relative;
     padding-left: 20px; }
@@ -42,25 +47,6 @@ a {
     font-family: "Oxygen", sans-serif;
     font-weight: 600;
     display: inline; }
-  .Logo-wrap #Logo-text-hover {
-    color: grey;
-    font-weight: 200;
-    opacity: 0;
-    font-style: italic;
-    font-size: 15px;
-    padding-left: 0px;
-    -webkit-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    -moz-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    -o-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-  .Logo-wrap .slash {
-    color: grey;
-    opacity: 0;
-    padding-left: 0px;
-    -webkit-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    -moz-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    -o-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
   .Logo-wrap .bottombar {
     position: absolute;
     top: 27px;
@@ -96,11 +82,52 @@ a {
 
 .Logo-wrap.hover .bottombar.move {
   left: 118px; }
-.Logo-wrap.hover #Logo-text-hover {
-  opacity: 1; }
-.Logo-wrap.hover .slash {
-  padding-left: 10px;
-  opacity: 1; }
+
+.Logo-wrap.clicked .bottombar.move-back {
+  left: 21px; }
+
+.Nav-menu {
+  display: block;
+  float: right; }
+  .Nav-menu ul.menu {
+    padding: 2px 10px 0;
+    position: relative; }
+    .Nav-menu ul.menu li {
+      display: inline-block;
+      position: relative;
+      z-index: 130;
+      margin: 20px 0px 0;
+      padding: 0 5px; }
+      .Nav-menu ul.menu li a {
+        color: #163F57;
+        font-size: 18px;
+        font-family: "Oxygen", sans-serif;
+        padding: 5px;
+        font-weight: 600; }
+        .Nav-menu ul.menu li a:hover {
+          text-decoration: none; }
+    .Nav-menu ul.menu .botscore- {
+      display: block;
+      height: 4px;
+      width: 45px;
+      background-color: #163F57;
+      position: absolute;
+      bottom: -2px;
+      left: 521px;
+      z-index: 120;
+      -webkit-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      -moz-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      -o-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+    .Nav-menu ul.menu .botscore-.hover-1 {
+      width: 45px;
+      left: 21px; }
+    .Nav-menu ul.menu .botscore-.hover-2 {
+      width: 51px;
+      left: 90px; }
+    .Nav-menu ul.menu .botscore-.hover-3 {
+      width: 64px;
+      left: 166px; }
 
 html, body {
   height: 100%; }
