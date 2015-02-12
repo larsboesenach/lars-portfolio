@@ -11,13 +11,14 @@
 <div class="page-wrap">
 <div class="Homepage">
 <!-- ------------------ -->
+<?php include('includes/navigation.php'); ?>
 <?php include('includes/home-header.php'); ?>
 <!-- ------------------ -->
 	
 <div class="Content-entry">
 	<div class="container">
 
-
+		
 
 	</div><!-- container -->
 </div><!-- Content-entry -->

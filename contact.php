@@ -11,7 +11,7 @@
 <div class="page-wrap">
 <div class="Homepage">
 <!-- ------------------ -->
-<?php include('includes/home-header.php'); ?>
+<?php include('includes/navigation.php'); ?>
 <!-- ------------------ -->
 	
 <div class="Content-entry">
