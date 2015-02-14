@@ -1,9 +1,14 @@
 .Nav-wrap {
 	border-bottom: 1px solid $grey-bg;
 	overflow: hidden;
+	background-color: white;
+	height: 67px;
+
 	a {
 		outline: 0;
 	}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {height: 65px;}
 }
 
 
@@ -105,7 +110,7 @@
 			z-index: 130;
 			margin-top: 20px;
 			padding: 0 5px;
-			a {
+			a.menu-a {
 				color: $blue;
 				font-size: 18px;
 				font-family: $font;
@@ -123,6 +128,13 @@
 					padding-bottom: 15px;
 				}
 			}//a
+			.menu-a.menu-a-focus {
+				color: $red-light;
+				border-bottom-color: $red-light;
+				text-decoration: none;
+			}
 		}//li
 	}//ul
 }//nav-menu
+
+

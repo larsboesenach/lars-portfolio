@@ -18,18 +18,25 @@
 	In this file we place all the Variables ;)
 
 **************************************************/
-p, h1, h2, h3, h4, h5, h6 {
-  color: black;
+a, p,
+h1, h2, h3,
+h4, h5, h6 {
+  color: #163F57;
   font-family: "Oxygen", sans-serif; }
 
 a {
-  font-family: "Oxygen", sans-serif; }
+  text-decoration: none !important; }
 
 .Nav-wrap {
   border-bottom: 1px solid #F1F2F2;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: white;
+  height: 67px; }
   .Nav-wrap a {
     outline: 0; }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .Nav-wrap {
+      height: 65px; } }
 
 .Logo-wrap {
   padding: 20px 15px 15px;
@@ -98,7 +105,7 @@ a {
       z-index: 130;
       margin-top: 20px;
       padding: 0 5px; }
-      .Nav-menu ul.menu li a {
+      .Nav-menu ul.menu li a.menu-a {
         color: #163F57;
         font-size: 18px;
         font-family: "Oxygen", sans-serif;
@@ -108,36 +115,61 @@ a {
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
         -o-transition: all 0.2s ease; }
-        .Nav-menu ul.menu li a:hover {
+        .Nav-menu ul.menu li a.menu-a:hover {
           text-decoration: none;
           padding-bottom: 15px; }
+      .Nav-menu ul.menu li .menu-a.menu-a-focus {
+        color: #F65A5B;
+        border-bottom-color: #F65A5B;
+        text-decoration: none; }
 
 .Header-wrap {
   background-color: #F1F2F2; }
-  .Header-wrap .Profile-wrap {
-    width: 250px;
-    height: 200px;
+  .Header-wrap .Profile-img-wrap {
+    width: 156px;
+    height: 156px;
     background-color: white;
-    margin: 40px auto;
-    padding: 20px; }
-    .Header-wrap .Profile-wrap .Profile-img {
-      width: 210px;
+    margin: 40px auto 20px;
+    padding: 13px;
+    border-radius: 100px; }
+    .Header-wrap .Profile-img-wrap .Profile-img-a {
+      display: block;
+      border-radius: 100px; }
+    .Header-wrap .Profile-img-wrap .Profile-img {
+      width: 130px;
+      height: 130px;
       margin: 0 auto;
       background-color: #163F57;
-      height: 130px;
+      border-radius: 100px;
       box-sizing: border-box;
-      position: relative; }
-    .Header-wrap .Profile-wrap .img-centering-wrap {
+      position: relative;
+      overflow: hidden; }
+    .Header-wrap .Profile-img-wrap .img-centering-wrap {
       margin: 0 auto;
       width: 50px; }
-    .Header-wrap .Profile-wrap .img-profile.animation-target {
+    .Header-wrap .Profile-img-wrap .img-profile.animation-target {
       border-radius: 100px;
       width: 50px;
       height: 50px;
       background-color: white;
       position: absolute;
-      bottom: -50px;
-      overflow: hidden; }
+      bottom: -50px; }
+  .Header-wrap .Profile-text-wrap {
+    display: block;
+    margin: 0px auto 40px;
+    width: 300px; }
+    .Header-wrap .Profile-text-wrap .Profile-text {
+      background-color: white;
+      padding: 20px; }
+      .Header-wrap .Profile-text-wrap .Profile-text p {
+        letter-spacing: 0.5px;
+        font-size: 16px;
+        text-align: center; }
+
+.Homepage .Content-entry {
+  padding: 40px 0;
+  width: 100%;
+  background-color: #E6E7E8; }
 
 html, body {
   height: 100%; }
@@ -145,7 +177,8 @@ html, body {
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -100px; }
+  margin-bottom: -70px;
+  background-color: #E6E7E8; }
 
 .page-wrap:after {
   content: "";
@@ -153,7 +186,7 @@ html, body {
 
 .site-footer, .page-wrap:after {
   /* .push must be the same height as footer */
-  height: 100px; }
+  height: 70px; }
 
 .site-footer {
   background: white;

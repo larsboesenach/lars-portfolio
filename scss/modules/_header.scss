@@ -1,20 +1,27 @@
 .Header-wrap {
 	background-color: $grey-bg;
 
-	.Profile-wrap {
-		width: 250px;
-		height: 200px;
+	.Profile-img-wrap {
+		width: 156px;
+		height: 156px;
 		background-color: white;
-		margin: 40px auto;
-		padding: 20px;
+		margin: 40px auto 20px;
+		padding: 13px;
+		border-radius: 100px;
 
+		.Profile-img-a {
+			display: block;
+			border-radius: 100px;
+		}
 		.Profile-img {
-			width: 210px;
+			width: 130px;
+			height: 130px;
 			margin: 0 auto;
 			background-color: $blue;
-			height: 130px;
+			border-radius: 100px;
 			box-sizing: border-box;
 			position: relative;
+			overflow: hidden;
 		}
 
 		.img-centering-wrap {
@@ -28,9 +35,24 @@
 			background-color: white;
 			position: absolute;
 			bottom: -50px;
-			
-			overflow: hidden;
 
+		}
+	}// Profile-img-wrap
+
+	.Profile-text-wrap {
+		display: block;
+		margin: 0px auto 40px;
+		width: 300px;
+
+		.Profile-text {
+			background-color: white;
+			padding: 20px;
+
+			p {
+				letter-spacing: 0.5px;
+				font-size: 16px;
+				text-align: center;
+			}
 		}
 	}
 }
