@@ -1,7 +1,8 @@
 <div class="Nav-wrap">
 	
-	<div class="container">
-			
+	<div class="container relative">
+			<div id="StopBuggyLogoHover"></div>
+
 			<a href="http://localhost:8888/lars-portfolio/">
 				<div class="Logo-wrap">
 					<div class="Logo-word">
@@ -11,6 +12,7 @@
 						<div class="bottombar"></div>
 						<div class="rightbar"></div>
 					</div>
+
 				</div><!-- Logo-wrap -->
 			</a>
 			

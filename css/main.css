@@ -38,9 +38,24 @@ a {
     .Nav-wrap {
       height: 65px; } }
 
+.container.relative {
+  position: relative; }
+
+#StopBuggyLogoHover {
+  height: 70px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+
+#StopBuggyLogoHover.allowHover {
+  display: none; }
+
 .Logo-wrap {
   padding: 20px 15px 15px;
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
   .Logo-wrap:hover {
     cursor: pointer; }
   .Logo-wrap:focus, .Logo-wrap:active {
@@ -88,7 +103,8 @@ a {
     background-color: #163F57; }
 
 .Logo-wrap.hover .bottombar.move {
-  left: 118px; }
+  left: 118px;
+  background-color: #F65A5B; }
 
 .Logo-wrap.clicked .bottombar.move-back {
   left: 21px; }
@@ -126,6 +142,7 @@ a {
 .Header-wrap {
   background-color: #F1F2F2; }
   .Header-wrap .Profile-img-wrap {
+    position: relative;
     width: 156px;
     height: 156px;
     background-color: white;
@@ -151,7 +168,7 @@ a {
       border-radius: 100px;
       width: 50px;
       height: 50px;
-      background-color: white;
+      background-color: #EDC297;
       position: absolute;
       bottom: -50px; }
   .Header-wrap .Profile-text-wrap {
@@ -165,6 +182,35 @@ a {
         letter-spacing: 0.5px;
         font-size: 16px;
         text-align: center; }
+
+#cheers-wrap .cheers-ballon {
+  background-color: white;
+  width: 120px;
+  height: 55px;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  border-radius: 20px 20px 20px 0px;
+  padding: 12px 0 0 16px;
+  opacity: 0;
+  -webkit-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  #cheers-wrap .cheers-ballon p {
+    font-size: 22px;
+    font-weight: 600; }
+
+#cheers-wrap.popOut .cheers-ballon {
+  position: absolute;
+  left: 175px;
+  top: 0;
+  border-radius: 20px 20px 20px 0px;
+  padding: 12px 0 0 16px;
+  opacity: 1; }
+  #cheers-wrap.popOut .cheers-ballon p {
+    font-size: 22px;
+    font-weight: 600; }
 
 .Homepage .Content-entry {
   padding: 40px 0;

@@ -11,7 +11,12 @@
 						</div>
 					</div>
 				</a>
-
+				
+				<div id="cheers-wrap">
+					<div class="cheers-ballon">
+						<p>Cheers !</p>
+					</div>
+				</div>
 			</div><!-- Profile-img-wrap -->
 
 			<div class="Profile-text-wrap">

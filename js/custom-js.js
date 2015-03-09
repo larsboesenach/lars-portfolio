@@ -18,6 +18,16 @@ $(document).ready(function() {
 	});
 
 // - - - - - - - - - - - - -
+	// this js trick delays the addClass function
+	$('#cheers-wrap').delay(800).queue(function(){
+		$(this).toggleClass('popOut');
+		$(this).dequeue();
+	});
 
+
+	$('#StopBuggyLogoHover').delay(1000).queue(function(){
+		$(this).toggleClass('allowHover');
+		$(this).dequeue();
+	});
 	
 });

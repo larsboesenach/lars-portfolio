@@ -15,9 +15,27 @@
 //----------
 //	Logo
 
+.container.relative {
+	position: relative;
+}
+
+#StopBuggyLogoHover {
+	height: 70px; 
+	width: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+#StopBuggyLogoHover.allowHover {
+	display: none;
+}
+
 .Logo-wrap {
 	padding: 20px 15px 15px;
 	display: inline-block;
+	position: relative;
+
 	&:hover {
 		cursor: pointer;
 	}
@@ -84,6 +102,7 @@
 .Logo-wrap.hover {
 	.bottombar.move {
 		left: 118px;
+		background-color: $red-light;
 	}
 }
 
