@@ -18,6 +18,44 @@ $(document).ready(function() {
 	});
 
 // - - - - - - - - - - - - -
+
+	$('#WhoIAm').mouseover(function() {
+		$('#WhoIAm-popUp').addClass('activate');
+	});
+
+	$('#WhoIAm').mouseout(function() {
+		$('#WhoIAm-popUp').removeClass('activate');
+	});
+
+
+	$('#WhatIDo').mouseover(function() {
+		$('#WhatIDo-popUp').addClass('activate');
+	});
+
+	$('#WhatIDo').mouseout(function() {
+		$('#WhatIDo-popUp').removeClass('activate');
+	});
+
+// - -
+
+	$('#WhatIDo').mouseover(function() {
+		$('#cheers-wrap').removeClass('popOut');
+	});
+
+	$('#WhatIDo').mouseout(function() {
+		$('#cheers-wrap').addClass('popOut');
+	});
+
+	$('#WhoIAm').mouseover(function() {
+		$('#cheers-wrap').removeClass('popOut');
+	});
+
+	$('#WhoIAm').mouseout(function() {
+		$('#cheers-wrap').addClass('popOut');
+	});
+
+
+// - - - - - - - - - - - - -
 	// this js trick delays the addClass function
 	$('#cheers-wrap').delay(800).queue(function(){
 		$(this).toggleClass('popOut');

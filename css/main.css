@@ -148,7 +148,8 @@ a {
     background-color: white;
     margin: 40px auto 20px;
     padding: 13px;
-    border-radius: 100px; }
+    border-radius: 100px;
+    z-index: 100; }
     .Header-wrap .Profile-img-wrap .Profile-img-a {
       display: block;
       border-radius: 100px; }
@@ -171,25 +172,34 @@ a {
       background-color: #EDC297;
       position: absolute;
       bottom: -50px; }
+  .Header-wrap .Profile-text-wrap.left {
+    margin-right: 0; }
+  .Header-wrap .Profile-text-wrap.right {
+    margin-left: 0; }
   .Header-wrap .Profile-text-wrap {
     display: block;
-    margin: 0px auto 40px;
+    margin: 20px auto 40px;
     width: 300px; }
     .Header-wrap .Profile-text-wrap .Profile-text {
       background-color: white;
       padding: 20px; }
-      .Header-wrap .Profile-text-wrap .Profile-text p {
+      .Header-wrap .Profile-text-wrap .Profile-text p, .Header-wrap .Profile-text-wrap .Profile-text span {
         letter-spacing: 0.5px;
-        font-size: 16px;
-        text-align: center; }
+        font-size: 16px; }
+      .Header-wrap .Profile-text-wrap .Profile-text span {
+        font-weight: 600;
+        font-size: 20px;
+        display: inline-block;
+        padding-bottom: 5px; }
 
 #cheers-wrap .cheers-ballon {
   background-color: white;
   width: 120px;
   height: 55px;
   position: absolute;
+  z-index: 90;
   left: 150px;
-  top: 0;
+  top: 25px;
   border-radius: 20px 20px 20px 0px;
   padding: 12px 0 0 16px;
   opacity: 0;
@@ -211,6 +221,44 @@ a {
   #cheers-wrap.popOut .cheers-ballon p {
     font-size: 22px;
     font-weight: 600; }
+
+#WhoIAm-popUp .cheers-ballon, #WhatIDo-popUp .cheers-ballon {
+  background-color: white;
+  position: absolute;
+  padding: 12px 0 0 16px;
+  opacity: 0;
+  z-index: 90;
+  -webkit-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  #WhoIAm-popUp .cheers-ballon p, #WhatIDo-popUp .cheers-ballon p {
+    font-size: 20px;
+    font-weight: 600; }
+
+#WhoIAm-popUp .cheers-ballon {
+  width: 230px;
+  height: 55px;
+  top: 0px;
+  left: -210px;
+  border-radius: 20px 20px 0px 20px; }
+
+#WhatIDo-popUp .cheers-ballon {
+  width: 195px;
+  height: 55px;
+  top: 105px;
+  left: 135px;
+  border-radius: 0px 20px 20px 20px; }
+
+#WhoIAm-popUp.activate .cheers-ballon {
+  opacity: 1;
+  top: -20px;
+  left: -230px; }
+
+#WhatIDo-popUp.activate .cheers-ballon {
+  opacity: 1;
+  top: 125px;
+  left: 155px; }
 
 .Homepage .Content-entry {
   padding: 40px 0;
